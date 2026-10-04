@@ -1,8 +1,8 @@
 # Mobile UI Restraint
 
-Agent skill for clear mobile and iPad UI: task-first hierarchy, adaptive layouts, and accessible controls.
+Helps AI agents build cleaner mobile and iPad interfaces.
 
-モバイル・iPad UIの情報整理、適応レイアウト、アクセシビリティを支援するエージェントスキル。
+AIエージェントが、すっきり使いやすいモバイル・iPad画面を作るためのスキル。
 
 ## English
 
