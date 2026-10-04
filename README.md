@@ -1,33 +1,33 @@
 # Mobile UI Restraint
 
-Helps AI agents build cleaner mobile and iPad interfaces.
+A skill to help your AI agent design phone and iPad screens. Makes the next step clear and keeps useful buttons easy to find. Removes clutter and puts extra technical, legal, and test details in the right place.
 
-AIエージェントが、すっきり使いやすいモバイル・iPad画面を作るためのスキル。
+AIエージェントに、スマートフォンやiPadの画面づくりを手伝ってもらうためのスキル。次にすることや必要なボタンを分かりやすくし、余計な説明や技術・規約・テストの詳しい話を適切な場所へ整理します。
 
 ## English
 
 ### Purpose and scope
 
-Use this skill when building, redesigning, or reviewing phone and iPad screens, mobile web UI, navigation, forms, onboarding, and dashboards. It helps keep the user's current task, next decision, and useful controls clear while preserving the app's workflow and identity.
+Use it to build or review app screens, mobile websites, menus, forms, task lists, and dashboards. It helps you choose what belongs on the screen and what can go in Help, Settings, About, or developer notes.
 
-Restraint means choosing where information belongs. Keep task context, frequent actions, real cost and privacy consequences, progress, and recovery near the decisions they support. Place general explanations in Help, Settings, or About, and engineering details in engineering docs. The goal is usable hierarchy, with enough information to act confidently.
+Keep prices, consent, progress, errors, and recovery steps beside the actions they affect. Required notices and useful controls stay available. The aim is to make the screen easier to use, with enough information to make a decision.
 
-The skill includes phone safe areas and keyboard behavior, iPad window resizing and adaptive navigation, accessibility, localized copy, and loading, empty, error, offline, and confirmation states. It is a design and review guide, not a component library or a substitute for testing real screens.
+Check small phone screens and iPad windows, including when you open the keyboard or resize the window. Also check larger text, screen readers, different languages, and what happens when the app is loading, empty, offline, or has an error. This skill gives your agent guidance. You still need to try the actual screens.
 
 ### Install
 
-Clone this repository into your agent's skill directory, with `SKILL.md` at `mobile-ui-restraint/SKILL.md`. For a runner that discovers skills in `~/.agents/skills`:
+Put this repository in your agent's skill folder, with `SKILL.md` at `mobile-ui-restraint/SKILL.md`. If your agent reads skills from `~/.agents/skills`, you can use:
 
 ```sh
 mkdir -p ~/.agents/skills
 git clone https://github.com/odditypot/mobile-ui-restraint.git ~/.agents/skills/mobile-ui-restraint
 ```
 
-Use an unused destination; keep any existing installation until you have compared it. If your runner uses another skill directory, clone there instead. Start a new session if skills are discovered at startup. The package has no scripts or bundled dependencies.
+Choose an unused folder so you can keep any existing installation. If your agent uses another skill folder, change the destination. Start a new session if your agent loads skills at startup. No extra scripts or packages are needed.
 
 ### Use and examples
 
-Ask your agent to apply the skill, supplying the screen, current task, and target viewports:
+Show your agent the screen, explain what the user needs to do, and say which devices to check:
 
 > Use mobile-ui-restraint to review this checkout on a small phone and a resizable iPad window. Preserve payment controls, costs, consent, and recovery.
 
@@ -39,11 +39,11 @@ For example, a checkout keeps price and consent beside purchase; a task list kee
 
 ### 目的と対象
 
-スマートフォン・iPadの画面、モバイルWeb UI、ナビゲーション、フォーム、オンボーディング、ダッシュボードの設計・改善・レビューに使います。アプリの操作フローや個性を保ちながら、ユーザーの現在の作業、次の判断、必要な操作を分かりやすくします。
+アプリの画面、モバイルサイト、メニュー、フォーム、タスク一覧、ダッシュボードの作成や見直しに使えます。画面に残す情報と、ヘルプ・設定・About・開発メモへ移す情報を選ぶ手助けをします。
 
-情報の置き場所を、使う場面に合わせて選びます。作業に必要な文脈、よく使う操作、実際の費用やプライバシーへの影響、進捗、エラーからの復帰方法は、その判断や操作の近くに置きます。一般的な説明はヘルプ・設定・Aboutへ、実装の詳細は開発ドキュメントへ整理します。安心して操作できる情報量と、明確な優先順位を目指します。
+価格、同意、進み具合、エラー、やり直す方法は、関係する操作の近くに置きます。必要な操作や表示義務のある説明は残します。判断に必要な情報を保ちながら、使いやすい画面を目指します。
 
-スマートフォンのセーフエリアやキーボード、iPadのウィンドウサイズ変更とナビゲーション、アクセシビリティ、多言語の文言、読み込み中・空・エラー・オフライン・確認の状態も扱います。設計とレビューのためのガイドであり、コンポーネント集ではありません。実際の画面や操作の検証と併せて使います。
+小さなスマートフォンの画面やiPadのウィンドウで、キーボードを開いたときやサイズを変えたときも確認します。大きな文字、画面読み上げ、別の言語、読み込み中・データなし・オフライン・エラーの表示も扱います。エージェントへの指針として使い、実際の画面や操作も試してください。
 
 ### インストール
 
